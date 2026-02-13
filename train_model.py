@@ -55,5 +55,5 @@ r2 = r2_score(y_test, y_pred)
 print(f"RMSE: {rmse:.2f}")
 print(f"R² Score: {r2:.2f}")
 
-joblib.dump(pipeline, "crop_yield_model.pkl")
+joblib.dump(pipeline, "crop_yield_model.pkl", compress=3)
 print("Model saved as crop_yield_model.pkl")
